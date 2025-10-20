@@ -72,9 +72,11 @@ export function Services() {
         </div>
 
         <div className="text-center mt-12">
-          <Button size="lg" className="group">
-            Scopri tutti i servizi
-            <RotateCcw className="ml-2 h-4 w-4 group-hover:rotate-180 transition-transform" />
+          <Button size="lg" className="group" asChild>
+            <a href="#contatti">
+              Contattaci
+              <RotateCcw className="ml-2 h-4 w-4 group-hover:rotate-180 transition-transform" />
+            </a>
           </Button>
         </div>
       </div>

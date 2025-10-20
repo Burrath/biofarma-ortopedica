@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Shield, Clock, Truck } from "lucide-react";
+import heroImage from "@/assets/hero.png";
 
 export function Hero() {
   return (
@@ -20,12 +21,15 @@ export function Hero() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="group">
-                Scopri di più
-                <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+              <Button size="lg" className="group" asChild>
+                <a href="tel:+393484191693">
+                  Chiama Ora
+                </a>
               </Button>
-              <Button size="lg" variant="outline">
-                Contattaci
+              <Button size="lg" variant="outline" asChild>
+                <a href="https://wa.me/393484191693">
+                  WhatsApp
+                </a>
               </Button>
             </div>
 
@@ -34,7 +38,7 @@ export function Hero() {
                 <div className="h-12 w-12 mx-auto mb-3 rounded-full bg-primary/10 flex items-center justify-center">
                   <Shield className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="font-semibold text-sm">Sanificazione</h3>
+                <h3 className="font-semibold text-sm">Noleggio e Vendita</h3>
                 <p className="text-xs text-muted-foreground">A norma di legge</p>
               </div>
               <div className="text-center">
@@ -55,14 +59,12 @@ export function Hero() {
           </div>
 
           <div className="relative">
-            <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/20 to-blue-600/20 flex items-center justify-center">
-              <div className="text-center space-y-4">
-                <div className="h-24 w-24 mx-auto rounded-full bg-primary/20 flex items-center justify-center">
-                  <Shield className="h-12 w-12 text-primary" />
-                </div>
-                <h3 className="text-xl font-semibold">Presidi Sanitari</h3>
-                <p className="text-muted-foreground">Professionale e affidabile</p>
-              </div>
+            <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
+              <img 
+                src={heroImage} 
+                alt="Biofarma Ortopedica Presidi Sanitari" 
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>

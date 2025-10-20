@@ -83,18 +83,19 @@ export function Products() {
                 <CardDescription className="text-sm leading-relaxed">
                   {product.description}
                 </CardDescription>
-                <Button variant="outline" size="sm" className="w-full mt-4">
-                  Scopri di più
-                </Button>
               </CardContent>
             </Card>
           ))}
         </div>
 
         <div className="text-center mt-12">
-          <Button size="lg" variant="outline">
-            Vedi tutti i prodotti
-          </Button>
+          <div className="max-w-2xl mx-auto">
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              Contattandoci, troviamo la giusta formula di noleggio per le tue esigenze specifiche. 
+              Il nostro team di esperti ti consiglierà quali prodotti sono più adatti alla tua situazione, 
+              garantendoti la massima convenienza e la migliore qualità del servizio.
+            </p>
+          </div>
         </div>
       </div>
     </section>

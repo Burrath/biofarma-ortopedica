@@ -85,9 +85,6 @@ export function Pricing() {
                   Montaggio incluso
                 </li>
               </ul>
-              <Button variant="outline" className="w-full">
-                Noleggia Ora
-              </Button>
             </CardContent>
           </Card>
 
@@ -125,26 +122,31 @@ export function Pricing() {
                   Nessuna cauzione
                 </li>
               </ul>
-              <Button className="w-full">
-                Scegli Pacchetto
-              </Button>
             </CardContent>
           </Card>
         </div>
 
         <div className="mt-16 text-center">
-          <div className="inline-flex flex-col sm:flex-row items-center gap-4 bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg">
-            <div className="flex items-center space-x-2">
-              <Truck className="h-5 w-5 text-primary" />
-              <span className="font-medium">Consegna in 24 ore</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <Shield className="h-5 w-5 text-primary" />
-              <span className="font-medium">Sanificazione certificata</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <Wrench className="h-5 w-5 text-primary" />
-              <span className="font-medium">Manutenzione gratuita</span>
+          <div className="max-w-3xl mx-auto">
+            <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+              Questi sono alcuni esempi di quanto può essere conveniente il noleggio. 
+              Ogni situazione è unica e merita una soluzione personalizzata. 
+              Contattaci per una valutazione gratuita e scopri come possiamo ottimizzare 
+              i costi per le tue specifiche esigenze, garantendoti sempre la massima convenienza.
+            </p>
+            <div className="inline-flex flex-col sm:flex-row items-center gap-4 bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg">
+              <div className="flex items-center space-x-2">
+                <Truck className="h-5 w-5 text-primary" />
+                <span className="font-medium">Consegna in 24 ore</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Shield className="h-5 w-5 text-primary" />
+                <span className="font-medium">Sanificazione certificata</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Wrench className="h-5 w-5 text-primary" />
+                <span className="font-medium">Manutenzione gratuita</span>
+              </div>
             </div>
           </div>
         </div>

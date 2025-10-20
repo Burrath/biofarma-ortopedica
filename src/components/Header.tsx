@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Phone, Mail } from "lucide-react";
+import logoImage from "@/assets/logo.png";
 
 export function Header() {
   return (
@@ -10,11 +11,11 @@ export function Header() {
           <div className="flex items-center space-x-4">
             <div className="flex items-center space-x-1">
               <Phone className="h-3 w-3" />
-              <span>095 93 17 96</span>
+              <a href="tel:+393484191693" className="hover:text-primary transition-colors">+39 348 419 1693</a>
             </div>
             <div className="flex items-center space-x-1">
               <Mail className="h-3 w-3" />
-              <span>info@biofarmaortopedica.it</span>
+              <a href="mailto:info@biofarmaortopedica.it" className="hover:text-primary transition-colors">info@biofarmaortopedica.it</a>
             </div>
           </div>
           <div className="hidden md:block">
@@ -24,34 +25,30 @@ export function Header() {
 
         {/* Main navigation */}
         <div className="flex items-center justify-between py-4">
-          <div className="flex items-center space-x-2">
-            <div className="h-8 w-8 rounded bg-primary"></div>
-            <div>
-              <h1 className="text-xl font-bold">BioFarma</h1>
-              <p className="text-xs text-muted-foreground">Ortopedica</p>
-            </div>
+          <div className="flex items-center">
+            <img src={logoImage} alt="Biofarma Logo" className="h-10 w-auto" />
           </div>
 
           <nav className="hidden md:flex items-center space-x-6">
-            <a href="#home" className="text-sm font-medium hover:text-primary transition-colors">
+            <a href="#home" className="text-sm font-medium hover:text-primary transition-colors scroll-smooth">
               Home
             </a>
-            <a href="#servizi" className="text-sm font-medium hover:text-primary transition-colors">
+            <a href="#servizi" className="text-sm font-medium hover:text-primary transition-colors scroll-smooth">
               Servizi
             </a>
-            <a href="#prodotti" className="text-sm font-medium hover:text-primary transition-colors">
+            <a href="#prodotti" className="text-sm font-medium hover:text-primary transition-colors scroll-smooth">
               Prodotti
             </a>
-            <a href="#assistenza" className="text-sm font-medium hover:text-primary transition-colors">
+            <a href="#assistenza" className="text-sm font-medium hover:text-primary transition-colors scroll-smooth">
               Assistenza
             </a>
-            <a href="#contatti" className="text-sm font-medium hover:text-primary transition-colors">
-              Contatti
+            <a href="#contatti" className="text-sm font-medium hover:text-primary transition-colors scroll-smooth">
+              Dove trovarci
             </a>
           </nav>
 
-          <Button size="sm" className="hidden md:inline-flex">
-            Noleggia Subito
+          <Button size="sm" className="hidden md:inline-flex" asChild>
+            <a href="#contatti">Contattaci</a>
           </Button>
         </div>
       </div>
