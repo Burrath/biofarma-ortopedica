@@ -3,7 +3,6 @@ import { Hero } from "./components/Hero";
 import { Services } from "./components/Services";
 import { Products } from "./components/Products";
 import { Assistance } from "./components/Assistance";
-import { Pricing } from "./components/Pricing";
 import { Advantages } from "./components/Advantages";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
@@ -16,7 +15,6 @@ function App() {
       <Services />
       <Products />
       <Assistance />
-      <Pricing />
       <Advantages />
       <Contact />
       <Footer />

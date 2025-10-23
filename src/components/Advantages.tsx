@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Shield, FileText, CreditCard, Truck, Clock, Wrench, DollarSign } from "lucide-react";
+import { Shield, FileText, CreditCard, Truck, Clock, Wrench } from "lucide-react";
 
 const advantages = [
   {
@@ -32,11 +32,6 @@ const advantages = [
     title: "Manutenzione e sanificazione gratis",
     description: "Ogni tipo di manutenzione degli ausili e delle apparecchiature, così come l'eventuale igienizzazione, sono fornite in via del tutto gratuita."
   },
-  {
-    icon: DollarSign,
-    title: "Prezzi convenienti",
-    description: "Sia al servizio di noleggio, sia ai prodotti in vendita, applichiamo tariffe e prezzi concorrenziali, che si tramutano in un reale vantaggio per l'utente."
-  }
 ];
 
 export function Advantages() {
@@ -72,7 +67,7 @@ export function Advantages() {
           <div className="inline-flex flex-col sm:flex-row items-center gap-4 bg-gradient-to-r from-primary/10 to-blue-600/10 rounded-lg p-6">
             <div className="flex items-center space-x-2">
               <div className="h-2 w-2 rounded-full bg-primary animate-pulse"></div>
-              <span className="font-medium">7 vantaggi esclusivi</span>
+              <span className="font-medium">6 vantaggi esclusivi</span>
             </div>
             <div className="flex items-center space-x-2">
               <div className="h-2 w-2 rounded-full bg-primary animate-pulse"></div>

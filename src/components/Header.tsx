@@ -42,6 +42,9 @@ export function Header() {
             <a href="#assistenza" className="text-sm font-medium hover:text-primary transition-colors scroll-smooth">
               Assistenza
             </a>
+            <a href="#caf-patronato" className="text-sm font-medium hover:text-primary transition-colors scroll-smooth">
+              CAF/Patronato
+            </a>
             <a href="#contatti" className="text-sm font-medium hover:text-primary transition-colors scroll-smooth">
               Dove trovarci
             </a>

@@ -3,7 +3,7 @@ import logoImage from "@/assets/logo.png";
 
 export function Footer() {
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-green-50 dark:bg-green-950/20 text-gray-800 dark:text-gray-200">
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
@@ -11,7 +11,7 @@ export function Footer() {
             <div className="flex items-center">
               <img src={logoImage} alt="Biofarma Logo" className="h-10 w-auto" />
             </div>
-            <p className="text-sm text-gray-300 leading-relaxed">
+            <p className="text-sm text-gray-600 dark:text-gray-600 leading-relaxed">
               Leader nel noleggio e vendita di presidi sanitari ed ortopedici in Sicilia. 
               Qualità, professionalità e servizio 24/7.
             </p>
@@ -44,12 +44,12 @@ export function Footer() {
           <div className="space-y-4">
             <h4 className="font-semibold text-lg">Servizi</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#servizi" className="text-gray-300 hover:text-primary transition-colors">Noleggio Presidi</a></li>
-              <li><a href="#servizi" className="text-gray-300 hover:text-primary transition-colors">Vendita Attrezzature</a></li>
-              <li><a href="#assistenza" className="text-gray-300 hover:text-primary transition-colors">Assistenza Infermieristica</a></li>
-              <li><a href="#assistenza" className="text-gray-300 hover:text-primary transition-colors">Trasporti Ambulanza</a></li>
-              <li><a href="#assistenza" className="text-gray-300 hover:text-primary transition-colors">Fisioterapia</a></li>
-              <li><a href="#prodotti" className="text-gray-300 hover:text-primary transition-colors">Manutenzione</a></li>
+              <li><a href="#servizi" className="text-gray-600 hover:text-primary transition-colors">Noleggio Presidi</a></li>
+              <li><a href="#servizi" className="text-gray-600 hover:text-primary transition-colors">Vendita Attrezzature</a></li>
+              <li><a href="#assistenza" className="text-gray-600 hover:text-primary transition-colors">Assistenza Infermieristica</a></li>
+              <li><a href="#assistenza" className="text-gray-600 hover:text-primary transition-colors">Trasporti Ambulanza</a></li>
+              <li><a href="#assistenza" className="text-gray-600 hover:text-primary transition-colors">Fisioterapia</a></li>
+              <li><a href="#prodotti" className="text-gray-600 hover:text-primary transition-colors">Manutenzione</a></li>
             </ul>
           </div>
 
@@ -58,15 +58,15 @@ export function Footer() {
             <h4 className="font-semibold text-lg">Orari</h4>
             <div className="space-y-2 text-sm">
               <div className="flex justify-between">
-                <span className="text-gray-300">Lun - Ven</span>
+                <span className="text-gray-600">Lun - Ven</span>
                 <span>8:00 - 18:00</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-gray-300">Sabato</span>
+                <span className="text-gray-600">Sabato</span>
                 <span>8:00 - 13:00</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-gray-300">Domenica</span>
+                <span className="text-gray-600">Domenica</span>
                 <span>Chiuso</span>
               </div>
             </div>
