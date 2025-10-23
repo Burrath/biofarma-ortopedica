@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { User, Ambulance, Activity } from "lucide-react";
+import { User, Ambulance } from "lucide-react";
 
 export function Assistance() {
   return (
@@ -37,6 +37,8 @@ export function Assistance() {
             <CardContent>
               <CardDescription className="text-base leading-relaxed">
                 Ci occupiamo di trasporti in ambulanza su tutta la Sicilia con particolare riferimento alla provincia di Catania, Messina, Siracusa, Enna.
+                Siamo di Giarre e serviamo tutta la provincia di Catania.
+                <br /><strong>Ambulanza offerta libera.</strong>
               </CardDescription>
             </CardContent>
           </Card>
@@ -44,13 +46,14 @@ export function Assistance() {
           <Card className="text-center hover:shadow-lg transition-shadow">
             <CardHeader>
               <div className="h-16 w-16 mx-auto mb-4 rounded-full bg-purple-100 dark:bg-purple-900/20 flex items-center justify-center">
-                <Activity className="h-8 w-8 text-purple-600 dark:text-purple-400" />
+                <User className="h-8 w-8 text-purple-600 dark:text-purple-400" />
               </div>
-              <CardTitle className="text-xl">Fisioterapia</CardTitle>
+              <CardTitle className="text-xl">Ricerca Badanti</CardTitle>
             </CardHeader>
             <CardContent>
               <CardDescription className="text-base leading-relaxed">
-                Supportiamo la scelta di fisioterapisti esperti per la riabilitazione di pazienti anche a domicilio.
+                Offriamo un servizio di ricerca badanti qualificate per l'assistenza domiciliare.
+                <br /><strong>Ricerca badanti gratuita.</strong>
               </CardDescription>
             </CardContent>
           </Card>

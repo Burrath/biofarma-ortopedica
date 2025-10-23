@@ -18,6 +18,9 @@ export function Hero() {
                 Quando conviene noleggiare e quando acquistare? 
                 Scopri tutti i vantaggi dei nostri servizi professionali.
               </p>
+              <p className="text-sm text-primary font-medium">
+                📍 Siamo di Giarre e lavoriamo in tutta la provincia di Catania
+              </p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
