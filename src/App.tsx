@@ -6,17 +6,27 @@ import { Assistance } from "./components/Assistance";
 import { Advantages } from "./components/Advantages";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
+import { PrivacyPolicy } from "./components/PrivacyPolicy";
 
 function App() {
+  const normalizedPath = window.location.pathname.replace(/\/+$/, "") || "/";
+  const isPrivacyPage = normalizedPath === "/privacy-policy";
+
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <Hero />
-      <Services />
-      <Products />
-      <Assistance />
-      <Advantages />
-      <Contact />
+      {isPrivacyPage ? (
+        <PrivacyPolicy />
+      ) : (
+        <>
+          <Hero />
+          <Services />
+          <Products />
+          <Assistance />
+          <Advantages />
+          <Contact />
+        </>
+      )}
       <Footer />
     </div>
   );
